@@ -1,0 +1,21 @@
+name: WF Sample
+
+on: [workflow_dispatch]
+
+jobs:
+  Job1:
+    name: First Job to run
+    runs-on: ubuntu-latest
+    env:
+      MY_ENV: This the value of an env variable
+    steps:
+      - name: List_job
+        run: echo '${{ toJSON(job)}}'
+      - name: List_runner
+        run: echo '${{ toJSON(runner)}}'
+      - name: List_ENV
+        run: echo '${{ toJSON(env)}}'
+      - name: List_github
+        run: echo '${{ toJSON(github)}}'
+      - name: List_secrets
+        run: echo '${{ toJSON(secrets)}}'

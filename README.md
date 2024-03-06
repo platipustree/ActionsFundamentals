@@ -1,7 +1,7 @@
 # GitHub Actions Fundamentals
 
-Repo for the `GitHub Actions Fundamentals` training.
-Modified
+Repo for the `GitHub Actions Fundamentals` training.  
+Modified a second time, this should not trigger a push workflow.
 
 ## 👉 Objectives
 
